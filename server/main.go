@@ -23,8 +23,6 @@ func main() {
 	config := server.NewConfig()
 	_, err := toml.DecodeFile(configPath, config)
 
-	fmt.Println(config.Subscriber.ClientID)
-
 	if err != nil {
 		log.Fatal(err)
 	}
