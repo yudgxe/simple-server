@@ -1,0 +1,9 @@
+bind_addr = ":8080"
+
+[storage]
+database_url = "host=localhost port=5432 user=postgres password=00007890 dbname=db_dev sslmode=disable"
+
+[subscriber]
+cluster_id = "test-cluster"
+client_id  = "client-id"
+subject    = "foo"
